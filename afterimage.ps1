@@ -75,4 +75,4 @@ $adapter | Set-DnsClientServerAddress -ServerAddresses $DNS, $DNS1}
     
     }
  } 
- while(!($prompt -notmatch "[12345678]"))
+ while(!($prompt -notmatch "[012345678]"))
