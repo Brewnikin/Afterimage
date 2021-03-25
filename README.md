@@ -1,9 +1,10 @@
 # Afterimage
 
 Afterimage v1.1 is a Powershell script used to quickly set up Windows computers for businesses. 
-###Update v1.1 
+
+### Update v1.1 
 - Added the ability to get serial number
-- 
+
 ## Features include:
 - Set Static IP Addresses
 - Download Files From the Internet
