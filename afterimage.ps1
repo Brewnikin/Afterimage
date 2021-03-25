@@ -14,6 +14,7 @@ $Prompt = Read-host "`r`nSelect From The Options Below:
 3. AVG Antivirus Download
 4. Add new Local User Account
 5. Set new IP Address
+6. Get Serial Number
 9. Quit
 Select Number" 
 Switch ($Prompt) #Switch statement for what ever needs to be done.
@@ -69,9 +70,9 @@ $adapter | New-NetIPAddress `
  -DefaultGateway $Gateway
 # Configure the DNS client server IP addresses
 $adapter | Set-DnsClientServerAddress -ServerAddresses $DNS, $DNS1}
-    6 {Write-host "`r`nPlease select a number between 1-5"}
-    7 {Write-host "`r`nPlease select a number between 1-5"}
-    8 {Write-host "`r`nPlease select a number between 1-5"}
+    6 {Write-host "`r`n"; wmic bios get serialnumber}
+    7 {Write-host "`r`nPlease select a number between 1-6"}
+    8 {Write-host "`r`nPlease select a number between 1-6"}
     
     }
  } 
