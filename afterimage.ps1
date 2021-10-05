@@ -1,3 +1,4 @@
+#To run: powershell -ep Bypass C:\afterimage.ps1
 $installPath = Test-Path C:\Installs
 
 #If Installs Directory does not exists, create it.
