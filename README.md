@@ -13,7 +13,7 @@ Afterimage v1.1 is a Powershell script used to quickly set up Windows computers 
 ## Usage: 
 1. Run Powershell as an Administrator
 2. Navigate to location of afterimage download `cd ..\location\of\download\`
-3. To run script type: `.\afterimage.ps1`
+3. To run script type: `powershell -ep Bypass C:\afterimage.ps1`
 
 ## Change/Add Downloads:
 In order to change what will be downloaded you must first find the link to download and copy the address. Once you have copied the address you must change the `Invoke-WebRequest -uri "your-new-download-address"` Do not forget to also change the `-Outfile` name so when you run the script it also automaticlly executes the program for you. 
